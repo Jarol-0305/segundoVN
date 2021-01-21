@@ -1,0 +1,100 @@
+/*/#linea cuando se comenta con # es ID
+.linea cuando es con punto es clase
+linea sin nada es un objeto
+*/
+     /*Jarol Ordoñez*/
+<style >
+
+	#formulario{
+	border-radius:10px;
+	box-shadow:1px 1px 5px #ccc;
+	padding:0px 20px 0px 20px
+    font-family:"times";	
+	}
+   .contenedor{
+   	position:absolute;
+   	width:100px
+	height:100%
+    }
+    #header{
+    position:absolute;
+    width:100%;
+    height:20%;
+    }
+    #body{
+   
+    width:100%;
+    height:20%;
+
+    }
+    #footer{
+    position:absolute;
+	width:100%;
+	height:20px;
+	bottom:0px; 
+	border:solid 5px; 
+    background:#737373;
+    }
+    .mnu_container{
+    	/*background:#5bc0de*/
+    	margin-left: -50px
+    }
+    .mnu_item{
+    	width:150px;
+    	background:#292b2c;
+    	margin-top:1px;     	
+    	list-style:none;
+    	padding:5px 0px 5px 8px;
+    	border-radius:3px;  	
+    }
+    .mnu_item a{
+    	text-decoration:none;
+    	color:#5bc0de;
+    }
+    .mnu_item:hover{
+    	background:#555A5D;
+    	width:160px;
+        cursor:pointer;
+        transition:.4s ease-out;
+
+    }
+     .mnu_item a:hover{
+    	background:#45A9BB;
+
+    }
+    img{
+        height:50px
+        margin-top:250px; 
+    }
+
+    #titulo_blog{
+    	margin-top:15px;
+    	margin-left:-10%;
+    	font-family:"Arial";
+    }
+    #publicidad{
+    	width:500px;
+    	overflow-y:scroll;
+        font-family:"Arial";
+    }
+    #publicidad img{
+    	width:250px;
+    }
+    #publicidad p{
+        text-align:justify;
+    }
+    
+    if(ap.value.trim().length<6){
+        ap.style.border='solid 1px brown';
+    }
+    if(na.value.trim().length<6){
+        na.style.border='solid 1px brown';
+    }
+    if(us.value.trim().length<6){
+        us.style.border='solid 1px brown';
+    }
+    if(pas.value.trim().length<6){
+        pas.style.border='solid 1px brown';
+    }
+
+    </style>

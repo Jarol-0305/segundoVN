@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="en"> 
+<head>
+    <meta charset="utf-8"><!-- Jarol Ordoñez -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <LINK REL=StyleSheet HREF="style5.css" TYPE="text/css" MEDIA=screen>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="formulario.js" language="javascript" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+            $(document).on("click",".btn_ejecutar",()=>{
+            $("#titulo").attr("class","bg-danger");
+        })
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script></head>
+<body><!-- Jarol Ordoñez -->&nbsp;
+<div class="container-fluid" >
+	<div class="row bg-info text-white " style="border-bottom:solid 10px #fff; "> 
+		<div class="col-md-1">
+			<img width="100px" src="https://64.media.tumblr.com/23d137e6da71128692c79a44d1ebdcaa/tumblr_pauc04aTqW1vqxzwlo1_1280.png">
+		</div>
+		<div class="col-md-10 text-center">
+	     	<h1 id="titulo_blog">MI BLOG / Jarol Ordoñez</h1>
+		</div>
+	</div>
+	<div class="row" id="body">
+		<div class="col-md-3 text-black" style="background:#FFFFFF;height:500px" id="menu"><h3>MENU</h3>
+<ul class="mnu_container">		
+    		
+    				<li class="mnu_item"><a href="https://es.reactjs.org/"><i class="fab fa-react">ReactJs </i></a></li>
+    		
+   				    <li class="mnu_item"><a href="https://reactnative.dev/"><i class="fab fa-react">ReactNative</i></a></li>
+   			
+    				<li class="mnu_item"><a href="https://nodejs.org/es/"><i class="fab fa-node">NodeJs</i></a></li>
+    				
+    			
+    				<li class="mnu_item"><a href="https://flutter.dev/"><i class="fas fa-stream">Flutter</i></a></li>
+    				
+    				
+    				<li class="mnu_item"><a href="https://webpack.js.org/"><i class="fab fa-weebly">WebPack</i></a></li>
+    				
+    				
+    				<li class="mnu_item"><a href="https://jquery.com/"><i class="fas fa-rss">JQuery</i></a></li>
+	    
+                    <li class="mnu_item"><a class="fa fa-home" href="#home">Home</a></li>
+
+                    <li class="mnu_item"><a class="fa fa-user" href="#aboutus">About Us</a></li>
+<!-- Jarol Ordoñez -->
+                    <li class="mnu_item"><a class="fa fa-desktop" href="">Products</a></li>
+
+                    <li class="mnu_item"><a class="fa fa-contao" href="contact">Contact</a></li>
+                    </ul>
+		</div>
+			<div class="col-md-6 bg-info text-center">
+                    <div class="row" id="formulario">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                    <h3 class="text-center mb-4">Formulario de registro</h3>
+                    <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Apellidos:</span>
+                    </div>
+                    <input type="text" id="txtapellidos" class="form-control">
+                    </div>  <!-- Jarol Ordoñez -->
+                    <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Nombres:</span>
+                    </div>
+                    <input type="text" id="name" class="form-control">
+                    </div> 
+                    <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Usuario:</span><!-- Jarol Ordoñez -->
+                    </div>
+                    <input type="text" id="user" class="form-control">
+                    </div>   <!-- Jarol Ordoñez -->
+                     <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Contraseña:</span>
+                    </div>
+                    <input type="password" id="password" class="form-control">
+                    </div>  
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01"><small>Ciudad:</small></label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+                 <option value="AMBATO">AMBATO</option>
+                    <option value="CUENCA">CUENCA</option>
+                    <option value="GUAYAQUIL">GUAYAQUIL</option>
+                    <option value="QUITO">QUITO</option>
+  </select>
+</div><!-- Jarol Ordoñez -->
+<div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Mujer</span>
+                    </div>
+                    <input type="radio" name="sexo" class="form-control">
+                    <div class="input-group-prepend">
+                    <spam class="input-group-text">Hombre</spam>
+                    </div>
+                    <input type="radio" name="sexo" class="form-control">
+                    </div>
+                    <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text">No soy un robot</span>
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox">
+                    </div>
+                    <br>
+				    <button id="btn_registrar" class="btn btn-dark fa fa-floppy-o"style="background:#34445c">&nbsp;&nbsp;&nbsp;Registrar</button>
+              </div>
+              </div>
+			</div>	
+		<div class="col-md-3" id="publicidad">
+            <!-- Jarol Ordoñez -->
+       <h5 id="aboutus">One Piece</h5><!-- Jarol Ordoñez -->
+        <img src="https://i0.wp.com/www.gamerfocus.co/wp-content/uploads/2017/07/one-piece.jpg?resize=1000%2C600&ssl=1">
+        <p>
+        One Piece (Wan Pīsu) es un Manga y Anime del autor Eiichirō Oda. La serie narra la historia de un joven llamado Monkey D. Luffy, que inspirado por su amigo pirata Shanks, comienza un viaje para alcanzar su sueño, ser el Rey de los piratas, para lo cual deberá encontrar el tesoro One Piece dejado por el anterior rey de los piratas Gol D. Roger.
+
+        El manga es publicado en la revista Shōnen Jump de Shūeisha desde 1997 y lleva editados un total de 60 volúmenes. Por otra parte, el anime es realizado por Toei Animation y se transmite en Fuji TV desde agosto de 1999 contando con 527 episodios hasta la fecha.
+        </p>
+
+    </div>
+</div><!-- Jarol Ordoñez -->
+ <div class="row bg-dark    " style="border:solid 2px;">
+ <div class="col-md-9 " > 
+ </div>
+ <br>
+ <br>
+ <br>
+ <br>
+ 		<div class="col-md-3 bg-black">
+		<a href="https://api.whatsapp.com/send?phone=0998357231&text=Necesito%20Informacion%20Acerca%20De%20Su%20Pagina">
+        <i class="fa fa-whatsapp fa-2x text-success" ><small style="font-size:12px">0962574739</small></i> 
+        </a>
+<!-- Jarol Ordoñez -->
+       <a href="https://www.youtube.com/channel/UCV6XIPttliiEL5KlRpce--Q?view_as=subscriber">         
+        <i class="fa fa-youtube-play fa-2x text-danger"></i>
+        </a>
+
+        <a href="https://www.facebook.com/">
+        	<i class="fa fa-facebook-official fa-2x"></i>
+        </a>
+
+        <a href="https://www.instagram.com">
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        </a>
+        </div>
+    </div>
+</body>
+</html>
