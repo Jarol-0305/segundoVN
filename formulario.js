@@ -13,3 +13,11 @@ return false;
 }
 alert("Datos Correctos");
 })
+
+let Usuario=$("#txtuser").val();
+if(Usuario.trim().length==0){
+alert("Debe Escribir un Usuario");
+return false;
+}
+alert("Debe escribir un Usuario");
+
